@@ -1,13 +1,13 @@
-package ie.wit.forumzilla.ui.share
+package ie.wit.forumzilla.ui.about
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class ShareViewModel : ViewModel() {
+class AboutViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is share Fragment"
+        value = "This is a forumZilla, this app is used for shearing interesting facts and post with other people."
     }
     val text: LiveData<String> = _text
 }
