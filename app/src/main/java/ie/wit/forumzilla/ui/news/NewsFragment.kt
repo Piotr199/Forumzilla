@@ -18,14 +18,18 @@ class NewsFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
         newsViewModel =
             ViewModelProviders.of(this).get(NewsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_news, container, false)
+
         //val textView: TextView = root.findViewById(R.id.text_news)
         //newsViewModel.text.observe(this, Observer {
         //    textView.text = it
         //})
         return root
+
+
     }
 }
