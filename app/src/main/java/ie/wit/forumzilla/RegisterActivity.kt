@@ -53,6 +53,7 @@ class RegisterActivity : AppCompatActivity() {
             .addOnCompleteListener {
                 if (!it.isSuccessful) return@addOnCompleteListener
 
+
                 // else if successful
                 Log.d(TAG, "Successfully created user with uid: ${it.result?.user?.uid}")
 
@@ -86,5 +87,4 @@ class RegisterActivity : AppCompatActivity() {
                 Log.d(TAG, "Failed to set value to database: ${it.message}")
             }
     }
-
 }
